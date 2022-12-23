@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: #a29bfe;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #main {
+            width: 35%;
+            background-color: white;
+            box-shadow: 0 0 1.5 gray;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .row {
+            width: 100%;
+            margin: 2rem;
+            margin-left: 0;
+        }
+        .btn {
+            width: 100%;
+            padding: 5px;
+            background-color: #05f809;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="main">
+            <h3 id="quebox">1) Which is your favorite programming</h3>
+            <div class="row">
+                <input type="radio" class="options" id="option1" value="a" name="option" />
+                <label for="option1">Option1</label>
+            </div>
+            <div class="row">
+                <input type="radio" class="options" id="option2" value="b" name="option" />
+                <label for="option2">Option2</label>
+            </div>
+            <div class="row">
+                <input type="radio" class="options" id="option3" value="c" name="option" />
+                <label for="option3">Option3</label>
+            </div>
+            <div class="row">
+                <input type="radio" class="options" id="option4" value="d" name="option" />
+                <label for="option4">Option4</label>
+            </div>
+            <button class="btn" onclick="submitQuiz()">submit</button>
+        </div>
+    </div>
+    <script src="p15.js"></script>
+</body>
+
+</html>
